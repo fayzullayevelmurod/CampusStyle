@@ -604,7 +604,6 @@ footer {
 
     .footer_top {
         display: flex;
-
     }
 
     h4 {
@@ -614,6 +613,19 @@ footer {
 
     .footer_block_left {
         margin-right: 40px;
+
+        .media_footer_top {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            background: var(--button-active, linear-gradient(89deg, #FF6408 0.3%, #FF8F3B 99.67%));
+        }
     }
 
     .footer_link {
@@ -657,6 +669,7 @@ footer {
     }
 
     .footer_phone {
+        white-space: nowrap;
         color: var(--white);
         font-size: 32px;
         font-weight: 500;
@@ -676,7 +689,6 @@ footer {
         @include flex-center();
         gap: 10px;
     }
-
 
     .footer_line {
         margin: 40px 0;
@@ -711,6 +723,66 @@ footer {
         }
 
     }
+
+    .accordion-single  {
+        display: none;
+        margin-top: 10px;
+      }
+      
+      .accordion-single-title {
+        cursor: pointer;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px; 
+        margin: 0;
+        padding: 8px 0;
+      }
+      
+      .accordion-single-title::after{
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transition: all 0.2s ease-in-out;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 1px;
+        border-top: solid 2px #fff;
+        border-right: solid 2px #fff;
+        transform: translateY(-50%) rotate(135deg);
+      }
+      
+      .accordion-single-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease-in-out;
+      }
+      
+      .accordion-single-content {
+
+        .footer_link {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            a {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+      }
+      
+      .accordion-single-item.is-open .accordion-single-content  {
+        max-height: 150px;
+      }
+      
+      .accordion-single-item.is-open .accordion-single-title::after  {
+        transform: translateY(-50%) rotate(315deg);
+      }
 }
 // footer
 

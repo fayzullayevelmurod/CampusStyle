@@ -1,3 +1,4 @@
+// location select
 let select_btn2 = document.querySelector('header .select .head');
 let select_text2 = document.querySelector('header .select .head span')
 let select_input2 = document.querySelector('header .select .head input')
@@ -14,4 +15,25 @@ select_items2.forEach(item => {
         select_text2.innerText = item.textContent;
         select2.classList.remove('active')
     }
-})
+});
+
+// location select
+
+// footer accardion
+const accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
+
+accSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
+
+function toggleAccordion() {
+  const items = document.querySelectorAll('.js-acc-item');
+  const thisItem = this.parentNode;
+
+  items.forEach(item => {
+    if (thisItem == item) {
+      thisItem.classList.toggle('is-open');
+      return;
+    }
+    item.classList.remove('is-open');
+  });
+}
+// footer accardion
