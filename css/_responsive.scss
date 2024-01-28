@@ -1,0 +1,102 @@
+@media only screen and (max-width: 1000px) {
+    h1.main_title {
+        color: --txt-grey;
+        font-family: var(--Montserrat);
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    h2 {
+        color: --txt-grey;
+        font-family: var(--Roboto);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    
+    h3 {
+        color: --txt-grey;
+        font-family: var(--Manrope);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    
+    h4 {
+        color: --txt-grey;
+        font-family: var(--Manrope);
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+    
+    h5 {
+        color: --txt-grey;
+        font-family: var(--Roboto);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    p {
+        color: var(--txt-grey);
+        font-family: var(--Roboto);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1.main_title {
+        font-family: var(--Roboto);
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    h2 {
+        font-family: var(--Roboto);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    
+    h3 {
+        font-family: var(--Manrope);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    
+    h4 {
+        font-family: var(--Manrope);
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    
+    h5 {
+        font-family: var(--Roboto);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1.main_title {
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1.main_title {
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+}

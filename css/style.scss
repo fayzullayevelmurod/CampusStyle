@@ -1,0 +1,237 @@
+:root {
+    // colors
+    --red: #99020E;
+    --bg-dark-grey: #303030;
+    --white: #FFFFFF;
+    --hover-pink: #CC3540;
+    --txt-grey: #282828;
+    --txt-light: #B4B4B4;
+    --line-grey: #F0F0F0;
+
+    --bg-grey: #E7E5E5;
+    --bg-dark-grey: #303030;
+    --grey: #464646;
+    // colors
+
+    // fonts
+    --Manrope: 'Manrope', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    // fonts
+}
+
+
+// mixin
+@mixin flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-full-stretch {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    align-items: start;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: .2s ease;
+}
+
+// mixin
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+span, label {
+    display: inline-block;
+}
+
+body {
+    font-style: normal;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+body {
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.main_container {
+    max-width: 1258px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+// global block
+h1.main_title {
+    color: --txt-grey;
+    font-family: var(--Manrope);
+    font-size: 62px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: --txt-grey;
+    font-family: var(--Manrope);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+h3 {
+    color: --txt-grey;
+    font-family: var(--Manrope);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+h4 {
+    color: --txt-grey;
+    font-family: var(--Manrope);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+h5 {
+    color: --txt-grey;
+    font-family: var(--Manrope);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+p {
+    color: var(--txt-grey);
+    font-family: var(--Manrope);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+// .main_link {
+//     transform: skew(-30deg);
+//     @include flex-full-center;
+//     border: 1px solid $--Primary-Red;
+//     @include transition();
+
+//     span {
+//         color: $--Primary-White;
+//         text-align: center;
+//         font-family: $Bebas;
+//         font-size: 24px;
+//         font-weight: 700;
+//         line-height: 100%;
+//         letter-spacing: 1.2px;
+//         @include transition;
+//         padding: 12px 15px;
+//         position: relative;
+//         transform: skew(30deg);
+//     }
+
+//     &:hover {
+//         span {
+//             color: $--Primary-Red;
+//         }
+//     }
+
+//     &:active {
+//         background-color: $--Primary-Red;
+
+//         span {
+//             color: $--Primary-White;
+//         }
+//     }
+// }
+
+.text_grandient {
+    font-family: var(--Manrope);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 130%;
+    background: var(--gradient-button, linear-gradient(89deg, #FF6205 0.3%, #FF9744 99.67%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    padding: 12px 30px;
+    border-radius: 4px;
+    border: 1px solid --line-grey;
+    background: #FFF;
+}
+
+.form_btn {
+    width: 333px;
+    height: 58px;
+    @include flex-full-center();
+    gap: 6px;
+    color: var(--txt-grey);
+    font-family: var(--Manrope);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 6px;
+    border: 1px solid #E0DFDF;
+    background: var(--button-gradient, linear-gradient(267deg, #DEDEDE -5.79%, rgba(203, 200, 200, 0.00) 64.85%, rgba(190, 186, 186, 0.26) 105.39%));
+}
+
+
+// footer
+footer {
+    padding: 65px 0;
+    background-color: var(--grey);
+
+    .footer_line {
+        height: 1px;
+        width: 100%;
+        background: #4E4E4E;
+    }
+}
+// footer
+
+
+@import 'responsive';
