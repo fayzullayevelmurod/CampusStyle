@@ -5,6 +5,43 @@
     }
 }
 
+@media only screen and (max-width: 1260px) {
+    .category {
+        .category_main {
+            
+            .category_main_right {
+                display: flex;
+                justify-content: end;
+
+                img {
+                    max-width: 215px;
+                    width: 215px;
+                }
+
+            }
+
+            .category_main_left {
+                .form_btn {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .category_card {
+            display: none;
+        }
+        .category_bottom {
+            justify-content: center;
+
+            .category_media {
+                display: flex;
+            }
+        }
+
+    }
+}
+
 @media only screen and (max-width: 1050px) {
     header {
         .header_top {
@@ -205,7 +242,7 @@
         background-size: contain;
 
         .main_container {
-            margin-top: 350px;
+            margin-top: 40%;
             flex-direction: column;
         }
 
@@ -331,6 +368,77 @@
                 width: calc(100% / 2 - 10px);
             }
         }
+
+        .bestsellers_img {
+            .bestsellers_img_titles {
+                gap: 2px;
+                span {
+                    padding: 2px 6px;
+                    font-size: 8px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .bestsellers_content {
+            padding: 8px 8px 0 8px;
+
+            h5 {
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 130%;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 150%;
+
+                h6 {
+                    font-size: 11px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+
+            .bestsellers_btns {
+                height: 45px;
+                margin-top: 15px;
+                
+                h6 {
+                    del {
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 150%;
+                    }
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .form_btn {
+            width: 319px;
+            height: 58px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+
+    .statistic {
+
+        .statistic_in {
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .statistic_card {
+            width: calc(100% / 2 - 10px);
+        }
     }
 }
 
@@ -381,9 +489,55 @@
         }
     }
 
-    .home {
-        .main_container {
-            margin-top: 130px;
+    .category {
+
+        .category_top {
+            margin-bottom: 30px;
+        }
+
+        .category_main {
+            transform: scale(1.1);
+            padding: 22px;
+            gap: 0;
+
+            .category_main_block {
+                width: 100%;
+            }
+
+            .category_main_left {
+                flex: 2;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin: 0 0 13px 0;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 130%;
+                }
+
+                .form_btn {
+                    font-size: 16px;
+                }
+            }
+
+            .category_main_right {
+                flex: 1;
+                justify-content: start;
+
+
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                    // width: 115px;
+                    // max-width: 115px;
+                }
+            }
         }
     }
 }
@@ -394,12 +548,19 @@
         font-weight: 400;
         line-height: 130%;
     }
+
+    // .home {
+    //     .main_container {
+    //         margin-top: 30%;
+    //     }
+    // }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
     h1.main_title {
         font-size: 42px;
         font-weight: 400;
         line-height: 130%;
     }
+
 }

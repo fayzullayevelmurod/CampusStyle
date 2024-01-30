@@ -670,6 +670,18 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   gap: 30px;
   flex-wrap: wrap;
 }
+.category .category_bottom .category_media {
+  display: none;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.category .category_bottom .category_media .form_btn {
+  width: calc(50% - 7px);
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
 
 .statistic {
   border-top: 1px solid var(--line-grey, #F0F0F0);
@@ -1079,6 +1091,28 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     bottom: 20px;
   }
 }
+@media only screen and (max-width: 1260px) {
+  .category .category_main .category_main_right {
+    display: flex;
+    justify-content: end;
+  }
+  .category .category_main .category_main_right img {
+    max-width: 215px;
+    width: 215px;
+  }
+  .category .category_main .category_main_left .form_btn {
+    width: 100%;
+  }
+  .category .category_card {
+    display: none;
+  }
+  .category .category_bottom {
+    justify-content: center;
+  }
+  .category .category_bottom .category_media {
+    display: flex;
+  }
+}
 @media only screen and (max-width: 1050px) {
   header .header_top .nav_top_link {
     display: none;
@@ -1229,7 +1263,7 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     background-size: contain;
   }
   .home .main_container {
-    margin-top: 350px;
+    margin-top: 40%;
     flex-direction: column;
   }
   .home .home_form {
@@ -1329,6 +1363,62 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .bestsellers .bestsellers_in .bestsellers_card {
     width: calc(50% - 10px);
   }
+  .bestsellers .bestsellers_img .bestsellers_img_titles {
+    gap: 2px;
+  }
+  .bestsellers .bestsellers_img .bestsellers_img_titles span {
+    padding: 2px 6px;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .bestsellers .bestsellers_content {
+    padding: 8px 8px 0 8px;
+  }
+  .bestsellers .bestsellers_content h5 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+  .bestsellers .bestsellers_content span {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .bestsellers .bestsellers_content span h6 {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .bestsellers .bestsellers_content .bestsellers_btns {
+    height: 45px;
+    margin-top: 15px;
+  }
+  .bestsellers .bestsellers_content .bestsellers_btns h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .bestsellers .bestsellers_content .bestsellers_btns h6 del {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .bestsellers .form_btn {
+    width: 319px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .statistic .statistic_in {
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .statistic .statistic_card {
+    width: calc(50% - 10px);
+  }
 }
 @media only screen and (max-width: 768px) {
   h1.main_title {
@@ -1370,8 +1460,42 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .call_btn img {
     width: 15px;
   }
-  .home .main_container {
-    margin-top: 130px;
+  .category .category_top {
+    margin-bottom: 30px;
+  }
+  .category .category_main {
+    transform: scale(1.1);
+    padding: 22px;
+    gap: 0;
+  }
+  .category .category_main .category_main_block {
+    width: 100%;
+  }
+  .category .category_main .category_main_left {
+    flex: 2;
+  }
+  .category .category_main .category_main_left h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .category .category_main .category_main_left p {
+    margin: 0 0 13px 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .category .category_main .category_main_left .form_btn {
+    font-size: 16px;
+  }
+  .category .category_main .category_main_right {
+    flex: 1;
+    justify-content: start;
+  }
+  .category .category_main .category_main_right img {
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1381,7 +1505,7 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     line-height: 130%;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
   h1.main_title {
     font-size: 42px;
     font-weight: 400;

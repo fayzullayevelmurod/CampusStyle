@@ -849,6 +849,20 @@ header {
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+
+        .category_media {
+            display: none;
+            gap: 14px;
+            flex-wrap: wrap;
+
+            .form_btn {
+                width: calc(100% / 2 - 7px);
+                gap: 6px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 150%; 
+            }
+        }
     }
 }
 // category
