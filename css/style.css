@@ -690,6 +690,9 @@ header .header_bottom_link .header_bootom_item.active a svg path {
 .legal ul li a {
   color: var(--orange);
 }
+.legal .form_btn {
+  margin-top: 30px;
+}
 
 footer {
   padding: 65px 0;
