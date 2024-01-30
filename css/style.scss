@@ -327,6 +327,28 @@ p {
 }
 // slect
 
+// breadcrumb
+.breadcrumb {
+    margin: 39px 0 30px 0;
+    @include flex-center();
+    gap: 6px;
+
+    a {
+        color: #464646;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    span {
+        color: #8C8C8C;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+// breadcrumb
+
 // header
 header {
     background-color: #464646FF;
@@ -887,6 +909,212 @@ header {
     }
 }
 // legal
+
+// payment
+.payment {
+    margin-bottom: 195px;
+
+    .main_container {
+        display: flex;
+        gap: 30px;
+    }
+
+    .payment_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 2;
+
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        p {
+            color: var(--txt-grey, #282828);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        h5 {
+            // margin: 20px 0;
+            color: var(--txt-grey, #282828);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 130%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            li {
+                color: var(--txt-grey, #282828);
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 130%;
+                @include flex-center();
+                gap: 10px;
+            }
+        }
+
+        .form_btn {
+            margin-top: 30px;
+        }
+    }
+
+    .payment_right {
+        position: relative;
+        flex: 1;
+
+        .payment_right_text {
+            position: absolute;
+            inset: 40px 53px 53px 38px;
+        }
+
+        h4 {
+            color: var(--orange);
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: var(--grey, #464646);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        li {
+            @include flex-start();
+            gap: 10px;
+            color: var(--grey, #464646);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+
+            img {
+                margin-top: 5px;
+            }
+        }
+
+        .payment_main_img {
+            width: 100%;
+        }
+    }
+}
+
+.payment_page {
+    margin-bottom: 65px;
+}
+// payment
+
+// about_product
+.about_product {
+    margin-bottom: 50px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .about_product_in {
+        display: flex;
+        gap: 30px;
+    }
+
+    p {
+        color: var(--txt-grey, #282828);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .form_btn {
+        margin-top: 30px;
+    }
+
+    .about_product_left_text {
+        margin-bottom: 20px;
+    }
+
+    .about_product_left {
+        flex: 1;
+    }
+
+    .about_product_right {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+// about_product
+
+// index_bottom
+.index_bottom {
+    margin-bottom: 65px;
+
+    img {
+        height: 488px;
+        object-fit: cover;
+    }
+
+    .main_container {
+        display: flex;
+        gap: 30px;
+    }
+
+    .index_bottom_right,
+    .index_bottom_left {
+        flex: 1;
+    }
+
+    .index_bottom_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .index_bottom_right {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .index_bottom_left_block {
+        h5 {
+            margin-bottom: 10px;
+        }
+    }
+
+    h5 {
+        color: #464646;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    p {
+        color: #282828;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+// index_bottom
 
 // footer
 footer {
