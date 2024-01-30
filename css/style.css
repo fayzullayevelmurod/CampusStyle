@@ -730,6 +730,12 @@ header .header_bottom_link .header_bootom_item.active a svg path {
 .legal .legal_right, .legal .legal_left {
   flex: 1;
 }
+.legal .legal_right img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
 .legal h2 {
   margin-bottom: 50px;
 }
@@ -1419,6 +1425,38 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .statistic .statistic_card {
     width: calc(50% - 10px);
   }
+  .statistic h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .statistic .statistic_line {
+    margin: 8px 0 6px 0;
+  }
+  .statistic p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .legal .main_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .legal h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .legal ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .legal ul li img {
+    width: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1.main_title {
@@ -1496,6 +1534,13 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .category .category_main .category_main_right img {
     width: 100%;
     max-width: 100%;
+  }
+  .legal {
+    margin: 90px 0;
+  }
+  .legal .legal_right {
+    margin-top: 20px;
+    transform: scale(1.1);
   }
 }
 @media only screen and (max-width: 480px) {
