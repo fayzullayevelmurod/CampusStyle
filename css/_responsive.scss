@@ -776,6 +776,66 @@
         }
 
     }
+
+    .about {
+        .material_contact {
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 65px;
+
+            .material_form {
+                background-color: #F6F6F6;
+
+                h4 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+    
+                .form {
+                    margin-top: 20px;
+    
+                    .form_one_input {
+                        margin-bottom: 10px;
+                    }
+    
+                    .main_input {
+                        text-align: center;
+                        height: 42px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 150%; 
+                    }
+    
+                    .form_btn {
+                        margin: 10px 0;
+                        height: 50px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 150%;
+                        gap: 6px;
+                    }
+    
+                    p {
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 150%;
+    
+                        a {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -942,6 +1002,15 @@
         font-size: 42px;
         font-weight: 400;
         line-height: 130%;
+    }
+
+    .about {
+        .material_contact {
+
+            .material_contact_img {
+                transform: scale(1.2);
+            }
+        }
     }
 
     // .home {

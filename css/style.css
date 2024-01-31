@@ -1079,6 +1079,48 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   align-items: center;
 }
 
+.about .material_contact {
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.about .material_contact .material_contact_img img {
+  width: 100%;
+}
+.about .material_contact .material_form {
+  max-width: 413px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgba(235, 235, 235, 0.1);
+  background: var(--white);
+  padding: 40px;
+}
+.about .material_contact h4 {
+  margin-bottom: 20px;
+}
+.about .material_contact p span {
+  background: var(--button-active, linear-gradient(89deg, #FF6408 0.3%, #FF8F3B 99.67%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about .material_contact .form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.about .material_contact .form .main_input {
+  height: 48px;
+}
+.about .material_contact .form .form_one_input {
+  margin-bottom: 14px;
+}
+.about .material_contact .form .form_btn {
+  margin: 20px 0;
+  width: 100%;
+}
+
 footer {
   padding: 65px 0;
   background-color: var(--grey);
@@ -1843,6 +1885,54 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     font-weight: 400;
     line-height: 150%;
   }
+  .about .material_contact {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 65px;
+  }
+  .about .material_contact .material_form {
+    background-color: #F6F6F6;
+  }
+  .about .material_contact .material_form h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .about .material_contact .material_form p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .material_contact .material_form .form {
+    margin-top: 20px;
+  }
+  .about .material_contact .material_form .form .form_one_input {
+    margin-bottom: 10px;
+  }
+  .about .material_contact .material_form .form .main_input {
+    text-align: center;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .material_contact .material_form .form .form_btn {
+    margin: 10px 0;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    gap: 6px;
+  }
+  .about .material_contact .material_form .form p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .material_contact .material_form .form p a {
+    text-decoration: underline;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1.main_title {
@@ -1971,6 +2061,9 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     font-size: 42px;
     font-weight: 400;
     line-height: 130%;
+  }
+  .about .material_contact .material_contact_img {
+    transform: scale(1.2);
   }
 }
 @media only screen and (max-width: 360px) {
