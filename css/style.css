@@ -930,6 +930,93 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   line-height: 150%;
 }
 
+.material h2 {
+  margin-bottom: 50px;
+}
+.material .material_cards {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+.material .material_cards .material_card {
+  width: calc(50% - 10px);
+}
+.material .material_cards .material_card img {
+  margin-bottom: 10px;
+}
+.material .material_cards .material_card h5 {
+  display: flex;
+  align-items: center;
+  color: var(--txt-grey, #282828);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+.material .material_cards .material_card h5 img {
+  display: none;
+}
+.material .material_cards .material_card p {
+  color: var(--txt-grey, #282828);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+.material .material_cards .material_card a {
+  color: var(--txt-light, #B4B4B4);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+.material .material_cards_bottom {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #F0F0F0;
+}
+.material .material_contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.material .material_contact .material_contact_img img {
+  width: 100%;
+}
+.material .material_contact .material_form {
+  max-width: 413px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgba(235, 235, 235, 0.1);
+  background: var(--white);
+  padding: 40px;
+}
+.material .material_contact h4 {
+  margin-bottom: 20px;
+}
+.material .material_contact p span {
+  background: var(--button-active, linear-gradient(89deg, #FF6408 0.3%, #FF8F3B 99.67%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.material .material_contact .form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.material .material_contact .form .main_input {
+  height: 48px;
+}
+.material .material_contact .form .form_one_input {
+  margin-bottom: 14px;
+}
+.material .material_contact .form .form_btn {
+  margin: 20px 0;
+  width: 100%;
+}
+
 footer {
   padding: 65px 0;
   background-color: var(--grey);
@@ -1597,6 +1684,57 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .payment_page .payment_right {
     transform: scale(1.3);
   }
+  .material .material_contact {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 65px;
+  }
+  .material .material_contact .material_contact_img {
+    transform: scale(1.2);
+  }
+  .material .material_contact .material_form {
+    background-color: #F6F6F6;
+  }
+  .material .material_contact .material_form h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .material .material_contact .material_form p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .material .material_contact .material_form .form {
+    margin-top: 20px;
+  }
+  .material .material_contact .material_form .form .form_one_input {
+    margin-bottom: 10px;
+  }
+  .material .material_contact .material_form .form .main_input {
+    text-align: center;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .material .material_contact .material_form .form .form_btn {
+    margin: 10px 0;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    gap: 6px;
+  }
+  .material .material_contact .material_form .form p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .material .material_contact .material_form .form p a {
+    text-decoration: underline;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1.main_title {
@@ -1681,6 +1819,43 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .legal .legal_right {
     margin-top: 20px;
     transform: scale(1.1);
+  }
+  .material h2 {
+    margin-bottom: 20px;
+  }
+  .material p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .material .material_cards .material_card {
+    width: 100%;
+  }
+  .material .material_cards .material_card h5 {
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  .material .material_cards .material_card h5 img {
+    display: block;
+    width: 24px;
+    margin-bottom: 0;
+  }
+  .material .material_cards .material_card a {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .material .material_cards .material_card p {
+    display: none;
+  }
+  .material .material_cards .material_card img {
+    width: 100%;
+  }
+  .material .material_cards_bottom {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 480px) {
