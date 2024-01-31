@@ -647,6 +647,13 @@
             line-height: 150%;
         }
     }
+
+    .payment_page {
+        padding-bottom: 20px;
+        .payment_right {
+            transform: scale(1.3);
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
