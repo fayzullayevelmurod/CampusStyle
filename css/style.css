@@ -1408,6 +1408,7 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     padding: 15px 40px 20px 40px;
     z-index: 5;
     display: none;
+    width: 324px;
   }
   .mobile_menu .menu_close {
     position: absolute;
@@ -1462,6 +1463,9 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   }
   .mobile_menu .links a:first-child {
     background: #2787F5;
+  }
+  .mobile_menu .form_btn {
+    width: 100%;
   }
   .mobile_menu.active {
     display: block;

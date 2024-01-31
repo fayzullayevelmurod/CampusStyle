@@ -108,6 +108,7 @@
         padding: 15px 40px 20px 40px;
         z-index: 5;
         display: none;
+        width: 324px;
 
         .menu_close {
             position: absolute;
@@ -170,6 +171,10 @@
                     background: #2787F5;
                 }
             }
+        }
+
+        .form_btn {
+            width: 100%;
         }
     }
 
