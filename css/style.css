@@ -187,6 +187,12 @@ p {
   background: var(--button-gradient, linear-gradient(267deg, #DEDEDE -5.79%, rgba(203, 200, 200, 0) 64.85%, rgba(190, 186, 186, 0.26) 105.39%));
 }
 
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
 .location .select {
   width: 265px;
   position: relative;
@@ -2028,10 +2034,36 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     line-height: 150%;
     margin-bottom: 10px;
   }
+  .about .about_left ul {
+    display: none;
+  }
   .about .about_left ul li {
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
+  }
+  .about .about_left .accordion-single {
+    display: block;
+  }
+  .about .about_left .accordion-single .header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--txt-grey, #282828);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .about .about_left .accordion-single .item {
+    margin-bottom: 10px;
+  }
+  .about .about_left .accordion-single .content p {
+    color: var(--txt-grey, #282828);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .about .about_left .accordion-single .item.is-open .header svg {
+    transform: rotateZ(90deg);
   }
   .about .about_right {
     display: flex;

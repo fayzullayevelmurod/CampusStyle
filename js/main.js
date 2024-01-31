@@ -128,3 +128,16 @@ burder.onclick = () => {
 menu_close.onclick = () => {
   mobile_menu.classList.remove('active');
 }
+
+const items = document.querySelectorAll('.item');
+
+if (items.length) {
+  items.forEach((item) => {
+      const header = item.querySelector('.header');
+      const content = item.querySelector('.content');
+  
+      header.addEventListener('click', () => {
+          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+      });
+  });
+}

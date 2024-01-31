@@ -260,6 +260,14 @@ p {
     background: var(--button-gradient, linear-gradient(267deg, #DEDEDE -5.79%, rgba(203, 200, 200, 0.00) 64.85%, rgba(190, 186, 186, 0.26) 105.39%));
 }
 
+.accordion {
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+}
+
 // slect
 .location {
     // padding: 10px;
