@@ -40,6 +40,12 @@
         }
 
     }
+
+    .payment {
+        .payment_left {
+            flex: 1;
+        }
+    }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -437,6 +443,7 @@
         }
 
         .statistic_card {
+            height: 93px;
             width: calc(100% / 2 - 10px);
         }
 
@@ -458,6 +465,7 @@
     }
 
     .legal {
+        margin: 90px 0;
         .main_container {
             flex-direction: column;
             align-items: center;
@@ -480,6 +488,163 @@
                 font-weight: 500;
                 line-height: 150%;
             }
+        }
+    }
+
+    .payment {
+        .main_container {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .payment_left {
+            h2 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
+            h5 {
+                margin: 10px 0;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 150%;
+            }
+
+            ul {
+                margin-bottom: 10px;
+                gap: 10px;
+                li {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+            }
+
+            .form_btn {
+                font-size: 18px;
+                width: 320px;
+            }
+        }
+
+        .payment_right {
+            background-color: #F5F5F5FF;
+            transform: scale(1.4);
+            border-radius: 6px;
+            height: 424px;
+            width: 268px;
+            margin: 80px auto 0 auto;
+
+            h4 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0 0 12px 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%; 
+                margin-bottom: 10px;
+            }
+
+            ul {
+                gap: 2px;
+                li {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .payment_right_text {
+                width: 75%;
+                inset: 30px;
+            }
+
+            .payment_main_img {
+                border-radius: 6px;
+                height: 424px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .about_product {
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 30px;
+        }
+        
+        .form_btn {
+            font-size: 18px;
+            width: 320px;
+        }
+
+        .about_product_left_text {
+            margin-bottom: 10px;
+        }
+
+        .about_product_in {
+            flex-direction: column;
+            gap: 40px;
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%;
+            }
+        }
+
+        .about_product_right {
+            transform: scale(1.2);
+        }
+    }
+
+    .index_bottom {
+        margin: 40px 0;
+
+        img {
+            height: 300px;
+            border-radius: 6px;
+        }
+
+        .main_container {
+            flex-direction: column;
+        }
+
+        .index_bottom_left {
+            gap: 10px;
+        }
+
+        .index_bottom_right {
+            gap: 10px;
+            flex-direction: column-reverse;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 150%;
         }
     }
 }
