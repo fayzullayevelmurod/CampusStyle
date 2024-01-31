@@ -1017,6 +1017,11 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   width: 100%;
 }
 
+.contact_page .contact_page_in {
+  display: flex;
+  gap: 30px;
+}
+
 footer {
   padding: 65px 0;
   background-color: var(--grey);

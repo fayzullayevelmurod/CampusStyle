@@ -1284,6 +1284,15 @@ header {
 }
 // material
 
+// contact_page
+.contact_page {
+    .contact_page_in {
+        display: flex;
+        gap: 30px;
+    }
+}
+// contact_page
+
 // footer
 footer {
     padding: 65px 0;
