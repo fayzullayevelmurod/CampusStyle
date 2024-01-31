@@ -1017,9 +1017,153 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   width: 100%;
 }
 
+.contact_page h2 {
+  margin-bottom: 40px;
+  color: var(--txt-grey, #282828);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+}
 .contact_page .contact_page_in {
+  margin-bottom: 65px;
   display: flex;
   gap: 30px;
+}
+.contact_page .contact_page_in .contact_page_left {
+  border-radius: 10px;
+  flex: 2;
+}
+.contact_page .contact_page_in .contact_page_left iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.contact_page .contact_page_in .contact_page_right {
+  flex: 1;
+}
+.contact_page .contact_page_in h3 {
+  margin-bottom: 20px;
+  color: var(--txt-grey, #282828);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.contact_page .contact_page_in ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.contact_page .contact_page_in ul li {
+  color: var(--txt-grey, #282828);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact_page .contact_page_in ul li a {
+  display: block;
+}
+.contact_page .contact_page_in p {
+  color: var(--txt-grey, #282828);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.contact_page .contact_page_in .social_media {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.about .about_in {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #F0F0F0;
+  margin-bottom: 50px;
+}
+.about .about_left {
+  flex: 2;
+}
+.about .about_left h2 {
+  color: var(--txt-grey, #282828);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+.about .about_left p {
+  color: var(--grey, #464646);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+.about .about_left h5 {
+  margin-bottom: 30px;
+}
+.about .about_left ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--txt-grey, #282828);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.about .about_left ul li p {
+  margin: 10px 0 20px 0;
+}
+.about .about_left .accordion-single {
+  display: none;
+}
+.about .about_right {
+  flex: 1;
+}
+.about .material_contact {
+  margin-bottom: 65px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.about .material_contact .material_contact_img img {
+  width: 100%;
+}
+.about .material_contact .material_form {
+  max-width: 413px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgba(235, 235, 235, 0.1);
+  background: var(--white);
+  padding: 40px;
+}
+.about .material_contact h4 {
+  margin-bottom: 20px;
+}
+.about .material_contact p span {
+  background: var(--button-active, linear-gradient(89deg, #FF6408 0.3%, #FF8F3B 99.67%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about .material_contact .form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.about .material_contact .form .main_input {
+  height: 48px;
+}
+.about .material_contact .form .form_one_input {
+  margin-bottom: 14px;
+}
+.about .material_contact .form .form_btn {
+  margin: 20px 0;
+  width: 100%;
 }
 
 footer {
@@ -1827,6 +1971,120 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   .material .material_contact .material_form .form p a {
     text-decoration: underline;
   }
+  .contact_page {
+    margin-bottom: 40px;
+  }
+  .contact_page h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .contact_page .contact_page_in {
+    display: block;
+    flex-direction: column;
+  }
+  .contact_page .contact_page_left {
+    height: 320px;
+    margin-bottom: 30px;
+  }
+  .contact_page .contact_page_right h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .contact_page .contact_page_right ul {
+    gap: 5px;
+  }
+  .contact_page .contact_page_right ul li {
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .about_in {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about .about_left .form_btn {
+    width: 320px;
+  }
+  .about .about_left h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .about .about_left p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+  .about .about_left h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+  .about .about_left ul li {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .about .about_right {
+    display: flex;
+    justify-content: center;
+  }
+  .about .material_contact {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 65px;
+  }
+  .about .material_contact .material_form {
+    background-color: #F6F6F6;
+  }
+  .about .material_contact .material_form h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .about .material_contact .material_form p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .material_contact .material_form .form {
+    margin-top: 20px;
+  }
+  .about .material_contact .material_form .form .form_one_input {
+    margin-bottom: 10px;
+  }
+  .about .material_contact .material_form .form .main_input {
+    text-align: center;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .material_contact .material_form .form .form_btn {
+    margin: 10px 0;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    gap: 6px;
+  }
+  .about .material_contact .material_form .form p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .about .material_contact .material_form .form p a {
+    text-decoration: underline;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1.main_title {
@@ -1955,6 +2213,26 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
     font-size: 42px;
     font-weight: 400;
     line-height: 130%;
+  }
+  .about .material_contact .material_contact_img {
+    transform: scale(1.2);
+  }
+  .about .about_in {
+    display: block;
+  }
+  .about .about_left {
+    margin-bottom: 20px;
+  }
+  .about .about_right {
+    width: 100%;
+    height: 300px;
+  }
+  .about .about_right img {
+    border-radius: 6px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 @media only screen and (max-width: 360px) {
