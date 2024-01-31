@@ -37,3 +37,90 @@ function toggleAccordion() {
   });
 }
 // footer accardion
+
+// Metal beds sliders
+let parent_slider = document.querySelector('.metal_beds_home .parent_slide .swiper')
+if (parent_slider) {
+  let childSlider = new Swiper('.metal_beds_home .child_slide .swiper', {
+    slidesPerView: 4,
+    spaceBetween: 6,
+    direction: "vertical",
+    breakpoints: {
+      1050: {
+        direction: "horizontal",
+        spaceBetween: 20,
+      }
+    }
+  });
+
+  let prentSlider = new Swiper(parent_slider, {
+    speed: 800,
+    navigation: {
+      nextEl: '.metal_beds_home .next_btn',
+      prevEl: '.metal_beds_home .prev_btn',
+    },
+    thumbs: {
+      swiper: childSlider,
+    },
+  })
+
+}
+
+// Metal beds sliders end
+
+// Catalog filter
+let catalog_filter_slider = document.querySelector('.catalog_filter');
+if (catalog_filter_slider) {
+  let catalog_slider = new Swiper(catalog_filter_slider, {
+    slidesPerView: 2.4,
+    spaceBetween: 8,
+    breakpoints: {
+      1000: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      576: {
+        slidesPerView: 3,
+      }
+    }
+  })
+
+  let catalog_filter_items = document.querySelectorAll('.catalog_filter .filter_item');
+  catalog_filter_items.forEach(filter => {
+    let btn = filter.querySelector('.filter_item_btn');
+    let item_lists = filter.querySelectorAll('ul li a');
+    btn.addEventListener('click', function () {
+      clsoeFilter(catalog_filter_items, filter);
+      filter.classList.toggle('active');
+    })
+    item_lists.forEach(el => {
+      el.onclick = e => {
+        e.preventDefault();
+        filter.classList.remove('active')
+      }
+    })
+  })
+
+  function clsoeFilter (elements, currentEl = null) {
+    elements.forEach(el => {
+      if (el !== currentEl) {
+        el.classList.remove('active');
+      }
+    })
+  }
+}
+// Catalog filter end
+
+let burder = document.querySelector('.media_burger');
+let mobile_menu = document.querySelector('.mobile_menu');
+let menu_close = document.querySelector('.menu_close');
+burder.onclick = () => {
+  mobile_menu.classList.add('active');
+}
+menu_close.onclick = () => {
+  mobile_menu.classList.remove('active');
+}

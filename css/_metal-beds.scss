@@ -1,0 +1,523 @@
+// Metal beds
+.metal_beds_home {
+    .top_content {
+        display: flex;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .slide_wrap {
+        width: 594px;
+    }
+
+    .right_block {
+        width: calc(100% - 30px - 594px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .datas {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title {
+                color: #282828;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 150%;
+            }
+
+            .data_title {
+                color: #A0A0A0;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 150%;
+                margin-right: 6px;
+            }
+
+            .data_value {
+                color: #282828;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
+            .copy {
+                margin-top: 10px;
+            }
+            
+            button {
+                margin-left: 4px;
+            }
+        }
+
+        .amount {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 40px;
+
+            .value {
+                color: #B4B4B4;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 150%;
+                text-decoration: line-through;
+            }
+
+            .discount {
+                color: #FF6408;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 130%;
+            }
+        }
+    }
+
+    .parent_slide {
+        position: relative;
+
+        .swiper_btn {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 2px;
+            background: #F0F0F0;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prev_btn {
+            left: 0;
+
+            svg {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        .next_btn {
+            right: 0;
+        }
+
+        .swiper-button-disabled {
+            svg {
+                opacity: 0.3;
+            }
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+            position: relative;
+            
+            img {
+                border-radius: 6px;
+                height: 590px;
+                object-fit: cover;
+            }
+
+            .alert {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 150%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+
+                div {
+                    padding: 4px 16px;
+                    display: inline-flex;
+                    border-radius: 2px;
+                }
+
+                &_danger {
+                    background: #FF1D1D;
+                }
+
+                &_success {
+                    background: #31B939;
+                }
+
+                &_orange {
+                    background: #FC7412;
+                }
+            }
+        }
+    }
+
+    .child_slide {
+        margin-top: 20px;
+
+        .swiper-slide {
+            position: relative;
+            height: 83px;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 2px solid transparent;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+                border-radius: 2px;
+                height: 100%;
+            }
+        }
+
+        .swiper-slide-thumb-active {
+            border: 2px solid #F76F02;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .descriptions {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        margin-top: 40px;
+        gap: 20px;
+
+        p {
+            color: #464646;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}
+// Metal beds end
+
+// bestseller
+.bestsellers {
+    margin-bottom: 40px;
+
+    .bestsellers_img {
+        .bestsellers_img_titles {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    } 
+}
+// bestseller end
+
+// Tags
+.tags {
+    margin: 0 0 65px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        a {
+            color: #282828;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+            height: 42px;
+            border-radius: 6px;
+            border: 1px solid #F76F02;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+// Tags end
+
+// catalog filter
+.bestsellers.catalog {
+    margin-top: 30px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .form_btn {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.catalog_filter {
+    margin-bottom: 50px;
+    overflow: visible;
+
+    .filter_item_btn {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid var(--line-grey, #F0F0F0);
+        background: var(--bg-cards, linear-gradient(180deg, #FAFAFA 0%, rgba(240, 240, 240, 0.00) 100%));
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        span {
+            color: #282828;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    .filter_item {
+        position: relative;
+
+        ul {
+            margin-top: 4px;
+            position: absolute;
+            border-radius: 6px;
+            background: #FFF;
+            box-shadow: 0px 4px 10px 0px rgba(70, 70, 70, 0.25);
+            width: 100%;
+            padding: 30px 107px 30px 34px;
+            display: none;
+            flex-direction: column;
+            gap: 14px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                color: #282828;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 150%;
+
+                img, svg {
+                    flex-shrink: 0;
+                    width: 18px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .filter_item.active {
+        .filter_item_btn {
+            background: #F2F2F2;
+            border-color: transparent;
+
+            svg {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        ul {
+            display: flex;
+        }
+    }
+}
+// catalog filter end
+
+
+@media only screen and (max-width: 1050px) {
+    .metal_beds_home {
+        .top_content {
+            flex-direction: column;
+        }
+
+        .slide_wrap {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .parent_slide {
+            width: calc(100% - 86px);
+
+            .swiper-slide {
+                img {
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+        
+        .child_slide {
+            width: 80px;
+            margin: 0;
+            display: flex;
+            
+            .swiper {
+                height: 400px;
+                width: 100%;
+            }
+        }
+
+        .right_block {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .metal_beds_home {
+        .top_content {
+            gap: 10px;
+        }
+
+        .parent_slide {
+            width: calc(100% - 62px);
+
+            .swiper-slide {
+                img {
+                    height: 226px;
+                }
+
+                .alert {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 128px;
+
+                    div {
+                        height: 16px;
+                        padding: 0px 6px;
+                        font-size: 8px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .child_slide {
+            width: 56px;
+            .swiper {
+                height: 226px;
+            }
+        }
+
+        .right_block {
+            h2 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .datas {
+                gap: 8px;
+                margin-bottom: 20px;
+
+                .title {
+                    font-size: 14px;
+                }
+
+                .data_title {
+                    font-size: 14px;
+                }
+
+                .data_value {
+                    font-size: 14px;
+                }
+            }
+
+            .amount {
+                margin-bottom: 20px;
+
+                .value {
+                    font-size: 16px;
+                }
+
+                .discount {
+                    font-size: 22px;
+                }
+            }
+
+            .form_btn {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+        
+        .descriptions {
+            gap: 10px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .tags {
+        h2 {
+            font-size: 22px;
+        }
+
+        ul {
+            gap: 10px;
+
+            a {
+                height: 39px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .catalog_filter {
+        .filter_item_btn {
+            height: 41px;
+
+            span {
+                font-size: 10px;
+            }
+
+            svg {
+                width: 16px;
+                height: auto;
+            }
+        }
+
+        .filter_item {
+            ul {
+                padding: 20px 46px 20px 20px;
+                gap: 9px;
+
+                a {
+                    font-size: 10px;
+
+                    img {
+                        width: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
