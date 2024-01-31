@@ -1079,6 +1079,48 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   align-items: center;
 }
 
+.about .about_in {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #F0F0F0;
+  margin-bottom: 50px;
+}
+.about .about_left {
+  flex: 2;
+}
+.about .about_left h2 {
+  color: var(--txt-grey, #282828);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+.about .about_left p {
+  color: var(--grey, #464646);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+.about .about_left h5 {
+  margin-bottom: 30px;
+}
+.about .about_left ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--txt-grey, #282828);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.about .about_left ul li p {
+  margin: 10px 0 20px 0;
+}
+.about .about_right {
+  flex: 1;
+}
 .about .material_contact {
   margin-bottom: 65px;
   display: flex;
