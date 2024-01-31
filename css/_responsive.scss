@@ -736,6 +736,46 @@
             }
         }
     }
+
+    .contact_page {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        .contact_page_in {
+            display: block;
+            flex-direction: column;
+        }
+
+        .contact_page_left {
+            height: 320px;
+            margin-bottom: 30px;
+        }
+        .contact_page_right {
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                gap: 5px;
+                li {
+                    gap: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+        }
+
+    }
 }
 
 @media only screen and (max-width: 768px) {

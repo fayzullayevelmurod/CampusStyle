@@ -1017,9 +1017,66 @@ header .header_bottom_link .header_bootom_item.active a svg path {
   width: 100%;
 }
 
+.contact_page h2 {
+  margin-bottom: 40px;
+  color: var(--txt-grey, #282828);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+}
 .contact_page .contact_page_in {
+  margin-bottom: 65px;
   display: flex;
   gap: 30px;
+}
+.contact_page .contact_page_in .contact_page_left {
+  border-radius: 10px;
+  flex: 2;
+}
+.contact_page .contact_page_in .contact_page_left iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.contact_page .contact_page_in .contact_page_right {
+  flex: 1;
+}
+.contact_page .contact_page_in h3 {
+  margin-bottom: 20px;
+  color: var(--txt-grey, #282828);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.contact_page .contact_page_in ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.contact_page .contact_page_in ul li {
+  color: var(--txt-grey, #282828);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact_page .contact_page_in ul li a {
+  display: block;
+}
+.contact_page .contact_page_in p {
+  color: var(--txt-grey, #282828);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.contact_page .contact_page_in .social_media {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 footer {
@@ -1753,6 +1810,38 @@ footer .accordion-single-item.is-open .accordion-single-title::after {
   }
   .material .material_contact .material_form .form p a {
     text-decoration: underline;
+  }
+  .contact_page {
+    margin-bottom: 40px;
+  }
+  .contact_page h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .contact_page .contact_page_in {
+    display: block;
+    flex-direction: column;
+  }
+  .contact_page .contact_page_left {
+    height: 320px;
+    margin-bottom: 30px;
+  }
+  .contact_page .contact_page_right h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .contact_page .contact_page_right ul {
+    gap: 5px;
+  }
+  .contact_page .contact_page_right ul li {
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
 @media only screen and (max-width: 768px) {
