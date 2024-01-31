@@ -208,6 +208,14 @@
 
 @media only screen and (max-width: 993px) {
 
+    .breadcrumb {
+        margin: 20px 0 30px 0;
+
+        a, span {
+            font-size: 12px;
+        }
+    }
+
     .location {
         .select {
             width: 215px;
@@ -656,6 +664,16 @@
     }
 
     .material {
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .form_btn {
+            width: 320px;
+        }
         .material_contact {
             flex-direction: column;
             gap: 30px;
