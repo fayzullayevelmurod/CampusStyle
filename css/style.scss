@@ -780,6 +780,7 @@ header {
 
 // category
 .category {
+    margin-top: 120px;
     margin-bottom: 90px;
     .category_main {
         display: flex;
@@ -864,7 +865,7 @@ header {
             flex-wrap: wrap;
 
             .form_btn {
-                width: calc(100% / 2 - 7px);
+                width: calc(100% / 2 - 7px) !important;
                 gap: 6px;
                 font-size: 18px;
                 font-weight: 500;
